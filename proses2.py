@@ -6,16 +6,16 @@ def konvers_enc(pesan):
     print ("---------------------------------\n")   
     convdecimal = []  
     for i in range(len(pesan)):  
-        convdecimal.append(str(ord(pesan[i])))   
+        convdecimal.append(str(ord(pesan[i])))
         decimal = ' '.join(convdecimal)  
-        print ("Hasil Konversi ke Desimal Karakter Pe san : ")  
+        print ("Hasil Konversi ke Desimal Karakter Pesan : ")  
         decimal = ' '.join(convdecimal)  
     print (' '.join(convdecimal))  
     convbiner = []  
     for i in range(len(convdecimal)):  
         convbiner.append(str(bin(int(convdecimal[ i]))[2:].zfill(8)))  
         biner = ''.join(convbiner)  
-        print ("hasil konversi ke biner karakter pesa n : ")  
+        print ("hasil konversi ke biner karakter pesan : ")  
         print (' '.join(convbiner))  
     convkeydecimal = []  
     for i in range(len(key1)):  
@@ -69,4 +69,5 @@ def main():
     print (konvers_enc(pesan))  
     if __name__ == '__main__':  
         main()
-    
+
+main()
